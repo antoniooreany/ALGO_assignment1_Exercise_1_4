@@ -30,59 +30,59 @@ public class JuTest_1_4_AllContained {
 	
 	@Test
 	public void testTeilmenge0() {
-		assertTrue(Exercise_1_4_Containment.allContained(m0, m0));
-		assertTrue(Exercise_1_4_Containment.allContained(m0, m1));
-		assertTrue(Exercise_1_4_Containment.allContained(m0, m2));
-		assertTrue(Exercise_1_4_Containment.allContained(m0, m3));
-		assertTrue(Exercise_1_4_Containment.allContained(m0, m4));
+		assertTrue(Exercise_1_4_AllContained.allContained(m0, m0));
+		assertTrue(Exercise_1_4_AllContained.allContained(m0, m1));
+		assertTrue(Exercise_1_4_AllContained.allContained(m0, m2));
+		assertTrue(Exercise_1_4_AllContained.allContained(m0, m3));
+		assertTrue(Exercise_1_4_AllContained.allContained(m0, m4));
 	}
 
 	@Test
 	public void testTeilmenge1() {
-		assertFalse(Exercise_1_4_Containment.allContained(m1, m0));
-		assertTrue(Exercise_1_4_Containment.allContained(m1, m1));
-		assertTrue(Exercise_1_4_Containment.allContained(m1, m2));
-		assertFalse(Exercise_1_4_Containment.allContained(m1, m3));
-		assertTrue(Exercise_1_4_Containment.allContained(m1, m4));
+		assertFalse(Exercise_1_4_AllContained.allContained(m1, m0));
+		assertTrue(Exercise_1_4_AllContained.allContained(m1, m1));
+		assertTrue(Exercise_1_4_AllContained.allContained(m1, m2));
+		assertFalse(Exercise_1_4_AllContained.allContained(m1, m3));
+		assertTrue(Exercise_1_4_AllContained.allContained(m1, m4));
 	}
 	
 	@Test
 	public void testTeilmenge2() {
-		assertFalse(Exercise_1_4_Containment.allContained(m2, m0));
-		assertTrue(Exercise_1_4_Containment.allContained(m2, m1));
-		assertTrue(Exercise_1_4_Containment.allContained(m2, m2));
-		assertFalse(Exercise_1_4_Containment.allContained(m2, m3));
-		assertTrue(Exercise_1_4_Containment.allContained(m2, m4));
+		assertFalse(Exercise_1_4_AllContained.allContained(m2, m0));
+		assertTrue(Exercise_1_4_AllContained.allContained(m2, m1));
+		assertTrue(Exercise_1_4_AllContained.allContained(m2, m2));
+		assertFalse(Exercise_1_4_AllContained.allContained(m2, m3));
+		assertTrue(Exercise_1_4_AllContained.allContained(m2, m4));
 	}
 
 	@Test
 	public void testTeilmenge3() {
-		assertFalse(Exercise_1_4_Containment.allContained(m3, m0));
-		assertFalse(Exercise_1_4_Containment.allContained(m3, m1));
-		assertFalse(Exercise_1_4_Containment.allContained(m3, m2));
-		assertTrue(Exercise_1_4_Containment.allContained(m3, m3));
-		assertFalse(Exercise_1_4_Containment.allContained(m3, m4));
+		assertFalse(Exercise_1_4_AllContained.allContained(m3, m0));
+		assertFalse(Exercise_1_4_AllContained.allContained(m3, m1));
+		assertFalse(Exercise_1_4_AllContained.allContained(m3, m2));
+		assertTrue(Exercise_1_4_AllContained.allContained(m3, m3));
+		assertFalse(Exercise_1_4_AllContained.allContained(m3, m4));
 	}
 
 	@Test
 	public void testTeilmenge4() {
-		assertFalse(Exercise_1_4_Containment.allContained(m4, m0));
-		assertFalse(Exercise_1_4_Containment.allContained(m4, m1));
-		assertFalse(Exercise_1_4_Containment.allContained(m4, m2));
-		assertFalse(Exercise_1_4_Containment.allContained(m4, m3));
-		assertTrue(Exercise_1_4_Containment.allContained(m4, m4));
+		assertFalse(Exercise_1_4_AllContained.allContained(m4, m0));
+		assertFalse(Exercise_1_4_AllContained.allContained(m4, m1));
+		assertFalse(Exercise_1_4_AllContained.allContained(m4, m2));
+		assertFalse(Exercise_1_4_AllContained.allContained(m4, m3));
+		assertTrue(Exercise_1_4_AllContained.allContained(m4, m4));
 	}
 
 	@Test
 	public void testTeilmenge5fast() {
-		assertTrue(Exercise_1_4_Containment.allContained(a1, a2));
-		assertTrue(Exercise_1_4_Containment.allContained(a2, a1));
+		assertTrue(Exercise_1_4_AllContained.allContained(a1, a2));
+		assertTrue(Exercise_1_4_AllContained.allContained(a2, a1));
 	}		
 	
 	@Test
 	public void testTeilmenge5slow() {		
-		assertTrue(Exercise_1_4_Containment.allContained(a1, a2));
-		assertTrue(Exercise_1_4_Containment.allContained(a2, a1));
+		assertTrue(Exercise_1_4_AllContained.allContained(a1, a2));
+		assertTrue(Exercise_1_4_AllContained.allContained(a2, a1));
 	}
 
 }
