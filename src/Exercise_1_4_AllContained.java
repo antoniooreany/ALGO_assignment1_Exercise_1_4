@@ -8,17 +8,14 @@ public class Exercise_1_4_AllContained {
     public static boolean allContained(long[] a1, long[] a2) {
 
 		Set<Long> aSet1 = new HashSet<>();
-//		Long[] aLong1 = {1L, 3L, 7L, 5L, 4L, 0L, 7L, 5L};
 		Long[] aLong1 = new Long[a1.length];
 		for (int i = 0; i < a1.length; i++) {
 			aLong1[i] = a1[i];
 		}
 
-		aSet1.addAll(Arrays.asList(aLong1));
-//		System.out.println(aSet1);
+		aSet1.addAll(Arrays.asList(aLong1));	//TODO How not loop all of them, but only set of them? This line do it
 
-
-        for (Long elem1 : aSet1) {        //TODO How not loop all of them, but only set of them?
+        for (Long elem1 : aSet1) {
             int i = 0;
             for (; (i < a2.length) && (elem1 != a2[i]); i++);
             if (i == a2.length) return false;
