@@ -1,16 +1,35 @@
+import java.util.*;
+
 public class Exercise_1_4_AllContained {
 
     /**
      * Checks if every value contained in a1 is also contained in a2
      */
     public static boolean allContained(long[] a1, long[] a2) {
-        for (long elem1 : a1) {        //TODO How not loop all of them, but only set of them?
+
+		Set<Long> aSet1 = new HashSet<>();
+//		Long[] aLong1 = {1L, 3L, 7L, 5L, 4L, 0L, 7L, 5L};
+		Long[] aLong1 = new Long[a1.length];
+		for (int i = 0; i < a1.length; i++) {
+			aLong1[i] = a1[i];
+		}
+
+		aSet1.addAll(Arrays.asList(aLong1));
+//		System.out.println(aSet1);
+
+
+        for (Long elem1 : aSet1) {        //TODO How not loop all of them, but only set of them?
             int i = 0;
             for (; (i < a2.length) && (elem1 != a2[i]); i++);
             if (i == a2.length) return false;
         }
         return true;
-    }
+
+
+
+
+
+	}
 
     public static final int MAX_LEN = 1000000;
 

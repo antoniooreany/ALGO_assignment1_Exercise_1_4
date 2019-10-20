@@ -1,0 +1,25 @@
+m0 subset of m1: result true | expected: true
+m0 subset of m2: result true | expected: true
+m0 subset of m3: result true | expected: true
+m0 subset of m4: result true | expected: true
+m1 subset of m0: result false | expected: false
+m1 subset of m2: result true | expected: true
+m2 subset of m1: result false | expected: false
+m0 subset of m0: result true | expected: true
+m1 subset of m1: result true | expected: true
+m1 subset of m3: result true | expected: true
+m3 subset of m1: result true | expected: true
+m4 subset of m0: result false | expected: false
+m4 subset of m1: result false | expected: false
+m4 subset of m2: result true | expected: true
+m4 subset of m3: result false | expected: false
+m4 subset of m4: result true | expected: true
+Array length 100: 
+	a1 contained in a2: true Running time: 0.787019 ms
+Array length 1000: 
+	a1 contained in a2: true Running time: 9.483236 ms
+Array length 10000: 
+	a1 contained in a2: true Running time: 27.706205 ms
+Array length 100000: 
+	a1 contained in a2: true Running time: 2442.038089 ms
+Array length 1000000: 
