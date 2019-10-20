@@ -21,11 +21,6 @@ public class Exercise_1_4_AllContained {
             if (i == a2.length) return false;
         }
         return true;
-
-
-
-
-
 	}
 
     public static final int MAX_LEN = 1000000;
