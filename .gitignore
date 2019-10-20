@@ -23,3 +23,5 @@
 hs_err_pid*
 .idea/
 ALGO_assignment1_Exercise_1_4.iml
+out/production/ALGO_assignment1_Exercise_1_4/META-INF/
+src/Test.java
