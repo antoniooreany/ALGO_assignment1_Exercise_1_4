@@ -7,9 +7,9 @@ public class Exercise_1_4_AllContained {
 	 * @return if all of the numbers from a1 contained in a2.
 	 */
 	public static boolean allContained(long[] a1, long[] a2) {
-        for (long elem1 : a1) {        //TODO How not loop all of them, but only set of them?
+        for (long elem1 : a1) {        //TODO How not to loop all of them, but only set of them?
             int i = 0;
-            for (; (i < a2.length) && (elem1 != a2[i]); i++);
+            while ((i < a2.length) && (elem1 != a2[i])) i++;
             if (i == a2.length) return false;
         }
         return true;
