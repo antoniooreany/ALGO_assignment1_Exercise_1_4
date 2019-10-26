@@ -1,9 +1,12 @@
 public class Exercise_1_4_AllContained {
 
-    /**
-     * Checks if every value contained in a1 is also contained in a2
-     */
-    public static boolean allContained(long[] a1, long[] a2) {
+	/**
+	 * Checks if every value contained in a1 is also contained in a2.
+	 * @param a1 an array of numbers which should be checked.
+	 * @param a2 an array of numbers to check.
+	 * @return if all of the numbers from a1 contained in a2.
+	 */
+	public static boolean allContained(long[] a1, long[] a2) {
         for (long elem1 : a1) {        //TODO How not loop all of them, but only set of them?
             int i = 0;
             for (; (i < a2.length) && (elem1 != a2[i]); i++);
